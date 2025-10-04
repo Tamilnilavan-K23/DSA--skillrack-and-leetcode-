@@ -8,13 +8,16 @@ public class Exp2 {
              callup(i+1, n);
     }
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        try(Scanner sc=new Scanner(System.in);){
+
+        
         System.out.print("enter the number of times name has to print:");
         int n=sc.nextInt();
 
         callup(1,n);
 
         sc.close();
+        }
     }
      
 }

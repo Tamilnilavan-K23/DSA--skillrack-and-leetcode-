@@ -9,7 +9,9 @@ public class Exp1 {
              callup(i+1, n, name);
     }
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        try(Scanner sc=new Scanner(System.in);){
+
+        
         System.out.print("enter the number of times name has to print:");
         int n=sc.nextInt();
         System.out.print("enter the name:");
@@ -18,5 +20,6 @@ public class Exp1 {
         callup(1,n,name);
 
         sc.close();
+        }
     }
 }
